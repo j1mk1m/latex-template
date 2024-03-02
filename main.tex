@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage{main}
+
+% Name, Andrew, HW details
+\newcommand{\myname}{James Kim}
+\newcommand{\myandrew}{gyeongwk@andrew.cmu.edu}
+\newcommand{\myhwnum}{0} % CHANGE
+\newcommand{\coursenum}{XX-XXX} % CHANGE
+\newcommand{\duedate}{MM/DD/YYYY} % CHANGE
+\newcommand{\assignmenttitle}{{\Large \coursenum\, Assignment \myhwnum}}
+\newcommand{\notestitle}{{\Large Title}}
+
+% Title
+\title{\assignmenttitle}
+\author{\myname\,(\myandrew)}
+\date{\today} % or \duedate
+
+% Header
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\coursenum\, HW \myhwnum}}
+\rhead{\fancyplain{}{Page \thepage{} of \pageref{mylastpagelabel}}}
+
+% Start Document
+\begin{document}
+
+\maketitle
+% \tableofcontents
+
+\section{Section}
+
+% Bibliography
+% \bibliographystyle{alpha}
+% \bibliography{main}
+
+\label{mylastpagelabel}
+\end{document}
