@@ -3,30 +3,53 @@
 \newcommand{\tendsto}{\rightarrow}
 
 % complexity classes
+% Time
+\newcommand{\TC}{\mathsf{TC}}
 \newcommand{\TIME}{\mathsf{TIME}}
 \newcommand{\PTIME}{\mathsf{P}}
+\newcommand{\NP}{\mathsf{NP}}
+\newcommand{\coNP}{\mathsf{coNP}}
+\newcommand{\EXP}{\mathsf{EXP}}
+\newcommand{\NEXP}{\mathsf{NEXP}}
+% Space
+\newcommand{\SC}{\mathsf{SC}}
+\newcommand{\SPACE}{\mathsf{SPACE}}
+\newcommand{\NSPACE}{\mathsf{NSPACE}}
+\newcommand{\PTIME}{\mathsf{P}}
 \newcommand{\LOGSPACE}{\mathsf{L}}
+\newcommand{\NLOGSPACE}{\mathsf{NL}}
+\newcommand{\PSPACE}{\mathsf{PSPACE}}
+% Probability Classes
 \newcommand{\ZPP}{\mathsf{ZPP}}
 \newcommand{\RP}{\mathsf{RP}}
 \newcommand{\BPP}{\mathsf{BPP}}
-\newcommand{\NP}{\mathsf{NP}}
-\newcommand{\coNP}{\text{co-}\mathsf{NP}}
-\newcommand{\TC}{\mathsf{TC}}
+% Counting Classes
+\newcommand{\FP}{\mathsf{FP}}
+\newcommand{\countP}{\#\boldsymbol{\mathsf{P}}}
+% Misc
 \newcommand{\AC}{\mathsf{AC}}
-\newcommand{\SC}{\mathsf{SC}}
 \newcommand{\SZK}{\mathsf{SZK}}
 \newcommand{\AM}{\mathsf{AM}}
 \newcommand{\IP}{\mathsf{IP}}
-\newcommand{\PSPACE}{\mathsf{PSPACE}}
-\newcommand{\EXP}{\mathsf{EXP}}
 \newcommand{\MIP}{\mathsf{MIP}}
-\newcommand{\NEXP}{\mathsf{NEXP}}
 \newcommand{\BQP}{\mathsf{BQP}}
 
-% UCT
+% TM 
 \newcommand{\converges}{\downarrow}
 \newcommand{\diverges}{\uparrow}
+
+% Reductions
 \newcommand{\reducesto}{\le}
 \newcommand{\turingreduce}{\le_T}
 \newcommand{\polyturingreduce}{\le^p_T}
 \newcommand{\polymapreduce}{\le^p_m}
+
+% Problem Template
+\newcommand{\dproblem}[3]{
+    \begin{tcolorbox}
+        \label{#1}
+    Problem: #1 \\
+    Instance: #2 \\
+    Question: #3
+    \end{tcolorbox}
+}
