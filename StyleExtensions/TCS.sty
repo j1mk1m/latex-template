@@ -11,7 +11,7 @@
 \newcommand{\LPOpt}{\mathsf{LPOpt}}
 \newcommand{\SDPOpt}{\mathsf{SDPOpt}}
 
-% complexity classes
+%%% COMPLEXITY CLASSES %%%
 \newcommand{\AH}{\mathsf{AH}}
 \newcommand{\PH}{\mathsf{PH}}
 % Time
@@ -34,17 +34,19 @@
 \newcommand{\ZPP}{\mathsf{ZPP}}
 \newcommand{\RP}{\mathsf{RP}}
 \newcommand{\BPP}{\mathsf{BPP}}
-% Counting Classes
-\newcommand{\FP}{\mathsf{FP}}
-\newcommand{\countP}{\#\boldsymbol{\mathsf{P}}}
-% Misc
-\newcommand{\AC}{\mathsf{AC}} % Circuit
-\newcommand{\NC}{\mathsf{NC}} % Circuit
-\newcommand{\SZK}{\mathsf{SZK}}
 \newcommand{\AM}{\mathsf{AM}}
-\newcommand{\IP}{\mathsf{IP}} % Interactive Proof
+\newcommand{\SZK}{\mathsf{SZK}}
+\newcommand{\BQP}{\mathsf{BQP}} % Quantum
+% Polytime-computable Functions
+\newcommand{\FP}{\mathsf{FP}}
+% Counting Classes
+\newcommand{\countP}{\#\boldsymbol{\mathsf{P}}}
+% Circuit
+\newcommand{\AC}{\mathsf{AC}}
+\newcommand{\NC}{\mathsf{NC}}
+% Interactive Proof
+\newcommand{\IP}{\mathsf{IP}} 
 \newcommand{\MIP}{\mathsf{MIP}}
-\newcommand{\BQP}{\mathsf{BQP}}
 
 % TM 
 \newcommand{\converges}{\downarrow}
@@ -64,4 +66,12 @@
     Instance: #2 \\
     Question: #3
     \end{tcolorbox}
+}
+\newcommand{\pcard}[5]{
+\begin{tcolorbox}[colback=Apricot]
+\textbf{#1} \hfill #2, #3 
+
+Instance: #4 \\
+Question: #5
+\end{tcolorbox}
 }
