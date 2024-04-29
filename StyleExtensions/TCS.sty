@@ -28,7 +28,7 @@
 \newcommand{\SPACE}{\mathsf{SPACE}}
 \newcommand{\NSPACE}{\mathsf{NSPACE}}
 \newcommand{\LOGSPACE}{\mathsf{L}}
-\newcommand{\NLOGSPACE}{\mathsf{NL}}
+\newcommand{\NLOGSPACE}{\mathsf{NL}} \newcommand{\NL}{\NLOGSPACE}
 \newcommand{\PSPACE}{\mathsf{PSPACE}}
 % Probability Classes
 \newcommand{\ZPP}{\mathsf{ZPP}}
@@ -55,13 +55,15 @@
 % Reductions
 \newcommand{\reducesto}{\le}
 \newcommand{\turingreduce}{\le_T}
+\newcommand{\manyonereduce}{\le_m}
 \newcommand{\polyturingreduce}{\le^p_T}
 \newcommand{\polymapreduce}{\le^p_m}
+\newcommand{\logspacereduce}{\le_l}
 
 % Problem Template
-\newcommand{\pcard}[5]{
+\newcommand{\pcard}[5][Decision]{
 \begin{tcolorbox}[colback=Apricot]
-\textbf{#1} \hfill #2, #3 
+\textbf{#2} \hfill #1, #3 
 
 Instance: #4 \\
 Question: #5
