@@ -1,11 +1,23 @@
 % TCS
-\newcommand{\zo}{\{0,1\}}
 \newcommand{\tendsto}{\rightarrow}
+\DeclareMathOperator{\Enc}{Enc}
 
-% complexity classes
+% Boolean
+\newcommand{\zo}{\{0,1\}}
+\newcommand{\pmo}{\{\pm 1\}}
+
+% Optimization
+\newcommand{\Opt}{\mathsf{Opt}}
+\newcommand{\LPOpt}{\mathsf{LPOpt}}
+\newcommand{\SDPOpt}{\mathsf{SDPOpt}}
+
+%%% COMPLEXITY CLASSES %%%
+\newcommand{\AH}{\mathsf{AH}}
+\newcommand{\PH}{\mathsf{PH}}
 % Time
 \newcommand{\TC}{\mathsf{TC}}
 \newcommand{\TIME}{\mathsf{TIME}}
+\newcommand{\NTIME}{\mathsf{NTIME}}
 \newcommand{\PTIME}{\mathsf{P}}
 \newcommand{\NP}{\mathsf{NP}}
 \newcommand{\coNP}{\mathsf{coNP}}
@@ -16,22 +28,25 @@
 \newcommand{\SPACE}{\mathsf{SPACE}}
 \newcommand{\NSPACE}{\mathsf{NSPACE}}
 \newcommand{\LOGSPACE}{\mathsf{L}}
-\newcommand{\NLOGSPACE}{\mathsf{NL}}
+\newcommand{\NLOGSPACE}{\mathsf{NL}} \newcommand{\NL}{\NLOGSPACE}
 \newcommand{\PSPACE}{\mathsf{PSPACE}}
 % Probability Classes
 \newcommand{\ZPP}{\mathsf{ZPP}}
 \newcommand{\RP}{\mathsf{RP}}
 \newcommand{\BPP}{\mathsf{BPP}}
-% Counting Classes
-\newcommand{\FP}{\mathsf{FP}}
-\newcommand{\countP}{\#\boldsymbol{\mathsf{P}}}
-% Misc
-\newcommand{\AC}{\mathsf{AC}}
-\newcommand{\SZK}{\mathsf{SZK}}
 \newcommand{\AM}{\mathsf{AM}}
-\newcommand{\IP}{\mathsf{IP}}
+\newcommand{\SZK}{\mathsf{SZK}}
+\newcommand{\BQP}{\mathsf{BQP}} % Quantum
+% Polytime-computable Functions
+\newcommand{\FP}{\mathsf{FP}}
+% Counting Classes
+\newcommand{\countP}{\#\boldsymbol{\mathsf{P}}}
+% Circuit
+\newcommand{\AC}{\mathsf{AC}}
+\newcommand{\NC}{\mathsf{NC}}
+% Interactive Proof
+\newcommand{\IP}{\mathsf{IP}} 
 \newcommand{\MIP}{\mathsf{MIP}}
-\newcommand{\BQP}{\mathsf{BQP}}
 
 % TM 
 \newcommand{\converges}{\downarrow}
@@ -40,15 +55,17 @@
 % Reductions
 \newcommand{\reducesto}{\le}
 \newcommand{\turingreduce}{\le_T}
+\newcommand{\manyonereduce}{\le_m}
 \newcommand{\polyturingreduce}{\le^p_T}
 \newcommand{\polymapreduce}{\le^p_m}
+\newcommand{\logspacereduce}{\le_l}
 
 % Problem Template
-\newcommand{\dproblem}[3]{
-    \begin{tcolorbox}
-        \label{#1}
-    Problem: #1 \\
-    Instance: #2 \\
-    Question: #3
-    \end{tcolorbox}
+\newcommand{\pcard}[5][Decision]{
+\begin{tcolorbox}[colback=Apricot]
+\textbf{#2} \hfill #1, #3 
+
+Instance: #4 \\
+Question: #5
+\end{tcolorbox}
 }

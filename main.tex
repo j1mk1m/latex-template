@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage{main}
+\usepackage{StyleExtensions/TCS}
 
 % Name, Andrew, HW details
 \newcommand{\myname}{James Kim}
@@ -26,7 +27,19 @@
 \maketitle
 % \tableofcontents
 
-\section{Section}
+\section{Main}
+\begin{theorem}[Halting]
+    The Halting Problem is undecidable.
+\end{theorem}
+
+\icard[tags]{Title}
+{This is an info card where you can put any content with a title and tags.}
+
+\section{TCS Style Extension}
+\pcard[Decision]{Satisfiability ($\mathsf{SAT}$)}
+{$\NP$-complete}
+{propositional formula $\vphi$}
+{is $\vphi$ satisfiable?}
 
 % Bibliography
 % \bibliographystyle{alpha}
