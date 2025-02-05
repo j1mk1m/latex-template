@@ -1,54 +1,54 @@
 % Contents
 \section{Main}
 \subsection{Theorems, Lemmas, Definitions, etc}
-\begin{theorem}[Halting]
+\begin{theorem}{Halting}{}
     The Halting Problem is undecidable.
 \end{theorem}
-\begin{lemma}[Lovasz-Local Lemma]
+\begin{lemma}{Lovasz-Local Lemma}{}
 Let $A_1, \dots, A_n$ be sequence of events, where each event $A_i$ is dependent to at most $d$ other events and $\Pr[A_i] \le p$. 
 Then, if $4pd \le 1$, then there is nonzero probability that none of the events occur.
 \end{lemma}
-\begin{corollary}
+\begin{corollary}{}{}
 This is a corollary
 \end{corollary}
-\begin{proposition}
+\begin{proposition}{}{}
 Let $G = (V, E)$ be an undirected graph. A vertex cover of $G$ is a subset $S \subseteq V$ such that for every edge $(u, v) \in E$, at least one of $u$ or $v$ is in $S$. The size of a minimum vertex cover of $G$ is always at least half the size of a maximum matching in $G$.
 \end{proposition}
 
-\begin{definition}
+\begin{definition}{}{}
     A graph $G = (V, E)$ is a pair where $V$ is a set of vertices and $E \subseteq V \times V$ is a set of edges.
 \end{definition}
-\begin{example}
+\begin{example}{}{}
     Consider the graph $G = (V, E)$ where $V = \{1, 2, 3, 4\}$ and $E = \{(1,2), (2,3), (3,4), (4,1)\}$. This graph forms a cycle of length 4.
 \end{example}
-\begin{theorem*}
+\begin{theorem*}{}{}
     Every connected graph with $n$ vertices has at least $n-1$ edges.
 \end{theorem*}
-\begin{lemma*}
+\begin{lemma*}{}{}
     In any graph, the sum of the degrees of all vertices is equal to twice the number of edges.
 \end{lemma*}
-\begin{corollary*}
+\begin{corollary*}{}{}
     Every graph has an even number of vertices with odd degree.
 \end{corollary*}
-\begin{proposition*}
+\begin{proposition*}{}{}
     A tree with $n$ vertices has exactly $n-1$ edges.
 \end{proposition*}
-\begin{definition*}
+\begin{definition*}{}{}
     A path in a graph is a sequence of vertices where each adjacent pair in the sequence is connected by an edge.
 \end{definition*}
-\subexample{This is a subexample}
-\begin{example*}
+\begin{example*}{}{}
 Unumbered example
 \end{example*}
-\begin{fact}
+\begin{fact}{}{}
 This is a fact
 \end{fact}
-\begin{claim}
+\begin{claim}{}{}
 This is a claim
 \end{claim}
 
 \icard[tags]{Title}
-{This is an info card where you can put any content with a title and tags.}
+{This is an info card where you can put any content with a title and tags.
+}
 
 \subsection{Operators}
 $\Pr, \E, \Var$ \\
@@ -56,14 +56,14 @@ $\poly, \polylog, \dist, \tr, \cost, \proj$ \\
 Short forms: \TT, \FF $\eps, \lam, \vphi, \ot, \op, \grad$ \\
 Number systems: $\Z, \N, \R$
 
+\newpage
 \section{TCS Style Extension}
 \pcard[Decision]{Satisfiability ($\mathsf{SAT}$)}
 {$\NP$-complete}
 {propositional formula $\vphi$}
 {is $\vphi$ satisfiable?}
 
-\label{mylastpagelabel}
-
+\newpage
 \section{Code}
 \subsection{Psuedocode}
 \begin{algorithm}
@@ -90,3 +90,5 @@ class Object:
     def __init__(self, arg):
         self.arg = arg
 \end{lstlisting}
+
+\label{mylastpagelabel}

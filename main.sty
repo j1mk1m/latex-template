@@ -8,9 +8,12 @@
 \hypersetup{linktoc=all}
 \usepackage{fancyhdr} % header
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry} % margins
+\setlength{\headheight}{14pt}
 \usepackage[parfill]{parskip}
 % \usepackage{qtree}
 % \usepackage{tikz}
+\tcbuselibrary{theorems}
+
 
 % Figures
 \newcommand{\myfig}[4]{\begin{figure}[H] \centering \includegraphics[width=#1\textwidth]{#2} \caption{#3} \label{#4} \end{figure}}
@@ -24,24 +27,32 @@
 \newcommand{\ul}[1]{\underline{#1}}
 
 % Theorems, Lemmas, Corollaries, Examples
-\newtheoremstyle{basic}{}{}{}{}{\bfseries}{.}{ }{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
-\theoremstyle{basic} % definition or plain (italicized body)
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{example}{Example}[theorem]
-\newtheorem*{remark}{Remark}
-\newtheorem*{theorem*}{Theorem}
-\newtheorem*{lemma*}{Lemma}
-\newtheorem*{corollary*}{Corollary}
-\newtheorem*{proposition*}{Proposition}
-\newtheorem*{definition*}{Definition}
-\newtheorem*{example*}{Example}
-\newtheorem*{fact}{Fact}
-\newtheorem*{claim}{Claim}
-\newcommand{\subexample}[1]{\textit{Example: } #1 \\}
+\newtcbtheorem[number within=section]{theorem}{Theorem}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{lemma}{Lemma}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{lem}
+
+\newtcbtheorem[number within=section]{corollary}{Corollary}%
+{colback=yellow!5,colframe=yellow!35!black,fonttitle=\bfseries}{cor}
+
+\newtcbtheorem[number within=section]{proposition}{Proposition}%
+{colback=orange!5,colframe=orange!35!black,fonttitle=\bfseries}{prop}
+
+\newtcbtheorem[number within=section]{definition}{Definition}%
+{colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{def}
+
+\newtcbtheorem[number within=section]{example}{Example}%
+{colback=purple!5,colframe=purple!35!black,fonttitle=\bfseries}{ex}
+
+\newtcbtheorem{remark}{Remark}%
+{colback=gray!5,colframe=gray!35!black,fonttitle=\bfseries}{rem}
+
+\newtcbtheorem{fact}{Fact}%
+{colback=cyan!5,colframe=cyan!35!black,fonttitle=\bfseries}{fact}
+
+\newtcbtheorem{claim}{Claim}%
+{colback=magenta!5,colframe=magenta!35!black,fonttitle=\bfseries}{claim}
 
 % Question
 \newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
@@ -212,6 +223,12 @@
 \newcommand{\bX}{\boldsymbol{X}}
 \newcommand{\bY}{\boldsymbol{Y}}
 \newcommand{\bZ}{\boldsymbol{Z}}
+
+% bold calligraphic
+\newcommand{\bcalG}{\boldsymbol{\calG}} \newcommand{\calbG}{\bcalG}
+\newcommand{\bcalX}{\boldsymbol{\calX}} \newcommand{\calbX}{\bcalX}
+\newcommand{\bcalY}{\boldsymbol{\calY}} \newcommand{\calbY}{\bcalY}
+\newcommand{\bcalZ}{\boldsymbol{\calZ}} \newcommand{\calbZ}{\bcalZ}
 
 % left-right wrappers
 \newcommand{\la}{\langle}
